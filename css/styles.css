@@ -337,7 +337,7 @@ h1 {
   content: '';
   position: absolute;
   top: 21%;
-  left: -9%;
+  left: -14%;
   width:20px;
   height: 20px;
   border-radius: 60%;
@@ -677,5 +677,27 @@ h1 {
   background-color: #582b3ce1;
   margin: 1em;
   min-height: 63vh;
+}
+  .event:before {
+  content: attr(data-date);
+  position: absolute;
+  top: 10px;
+  right: calc(100% + 20px);
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 2em;
+  color: #666;
+  left:-30%;
+}
+  .event:after {
+  content: '';
+  position: absolute;
+  top: 21%;
+  left: -24%;
+  width:20px;
+  height: 20px;
+  border-radius: 60%;
+  background-color: #ff5da3;
+  transform: translate(-50%, -50%);
 }
 }
